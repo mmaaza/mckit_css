@@ -1,0 +1,171 @@
+$marginValues: (
+  0: 0px,
+  px: 1px,
+  1: 0.25rem,
+  2: 0.5rem,
+  3: 0.75rem,
+  4: 1rem,
+  5: 1.25rem,
+  6: 1.5rem,
+  7: 1.75rem,
+  8: 2rem,
+  9: 2.25rem,
+  10: 2.5rem,
+  11: 2.75rem,
+  12: 3rem,
+  14: 3.5rem,
+  16: 4rem,
+  20: 5rem,
+  24: 6rem,
+  28: 7rem,
+  32: 8rem,
+  36: 9rem,
+  40: 10rem,
+  44: 11rem,
+  48: 12rem,
+  52: 13rem,
+  56: 14rem,
+  60: 15rem,
+  64: 16rem,
+  72: 18rem,
+  80: 20rem,
+  96: 24rem,
+  auto: auto,
+);
+
+// Margins
+
+@each $value, $margin in $marginValues {
+  .m-#{$value} {
+    margin: $margin;
+  }
+}
+
+@each $value, $margin in $marginValues {
+  .mx-#{$value} {
+    margin-left: $margin;
+    margin-right: $margin;
+  }
+}
+
+@each $value, $margin in $marginValues {
+  .my-#{$value} {
+    margin-top: $margin;
+    margin-bottom: $margin;
+  }
+}
+
+@each $value, $margin in $marginValues {
+  .ms-#{$value} {
+    margin-inline-start: $margin;
+  }
+}
+
+@each $value, $margin in $marginValues {
+  .me-#{$value} {
+    margin-inline-end: $margin;
+  }
+}
+
+@each $value, $margin in $marginValues {
+  .mt-#{$value} {
+    margin-top: $margin;
+  }
+}
+
+@each $value, $margin in $marginValues {
+  .mb-#{$value} {
+    margin-bottom: $margin;
+  }
+}
+
+@each $value, $margin in $marginValues {
+  .ml-#{$value} {
+    margin-left: $margin;
+  }
+}
+
+@each $value, $margin in $marginValues {
+  .mr-#{$value} {
+    margin-right: $margin;
+  }
+}
+
+// Paddings
+
+@each $value, $margin in $marginValues {
+  .p-#{$value} {
+    padding: $margin;
+  }
+}
+
+@each $value, $margin in $marginValues {
+  .px-#{$value} {
+    padding-left: $margin;
+    padding-right: $margin;
+  }
+}
+
+@each $value, $margin in $marginValues {
+  .py-#{$value} {
+    padding-top: $margin;
+    padding-bottom: $margin;
+  }
+}
+
+@each $value, $margin in $marginValues {
+  .ps-#{$value} {
+    padding-inline-start: $margin;
+  }
+}
+
+@each $value, $margin in $marginValues {
+  .pe-#{$value} {
+    padding-inline-end: $margin;
+  }
+}
+
+@each $value, $margin in $marginValues {
+  .pt-#{$value} {
+    padding-top: $margin;
+  }
+}
+
+@each $value, $margin in $marginValues {
+  .pb-#{$value} {
+    padding-bottom: $margin;
+  }
+}
+
+@each $value, $margin in $marginValues {
+  .pl-#{$value} {
+    padding-left: $margin;
+  }
+}
+
+@each $value, $margin in $marginValues {
+  .pr-#{$value} {
+    padding-right: $margin;
+  }
+}
+
+// for gap property
+@each $value, $margin in $marginValues {
+  .gap-#{$value} {
+    gap: $margin;
+  }
+}
+
+// for gap-x property
+@each $value, $margin in $marginValues {
+  .gap-x-#{$value} {
+    column-gap: $margin;
+  }
+}
+
+// for gap-y property
+@each $value, $margin in $marginValues {
+  .gap-y-#{$value} {
+    row-gap: $margin;
+  }
+}

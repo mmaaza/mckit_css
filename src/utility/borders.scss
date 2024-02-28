@@ -1,0 +1,127 @@
+$borderValues: (
+  none: none,
+  0: 0px,
+  2: 2px,
+  4: 4px,
+  8: 8px,
+);
+// Start: Borders Widths
+
+.border {
+  border-width: 1px;
+}
+
+.border-t {
+  border-top-width: 1px;
+}
+
+.border-b {
+  border-bottom-width: 1px;
+}
+
+.border-l {
+  border-left-width: 1px;
+}
+
+.border-r {
+  border-right-width: 1px;
+}
+
+.border-s {
+  border-inline-start-width: 1px;
+}
+
+.border-e {
+  border-inline-end-width: 1px;
+}
+
+.border-x {
+  border-left-width: 1px;
+  border-right-width: 1px;
+}
+
+.border-y {
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+}
+
+@each $value, $border in $borderValues {
+  .border-#{$value} {
+    border-width: $border;
+  }
+}
+
+@each $value, $border in $borderValues {
+  .border-t-#{$value} {
+    border-top-width: $border;
+  }
+}
+
+@each $value, $border in $borderValues {
+  .border-b-#{$value} {
+    border-bottom-width: $border;
+  }
+}
+
+@each $value, $border in $borderValues {
+  .border-l-#{$value} {
+    border-left-width: $border;
+  }
+}
+
+@each $value, $border in $borderValues {
+  .border-r-#{$value} {
+    border-right-width: $border;
+  }
+}
+
+@each $value, $border in $borderValues {
+  .border-s-#{$value} {
+    border-inline-start-width: $border;
+  }
+}
+
+@each $value, $border in $borderValues {
+  .border-e-#{$value} {
+    border-inline-end-width: $border;
+  }
+}
+
+@each $value, $border in $borderValues {
+  .border-x-#{$value} {
+    border-left-width: $border;
+    border-right-width: $border;
+  }
+}
+
+@each $value, $border in $borderValues {
+  .border-y-#{$value} {
+    border-top-width: $border;
+    border-bottom-width: $border;
+  }
+}
+
+// End: Borders Widths
+
+// Start: Borders Styles
+
+$borderStyles: (
+  solid: solid,
+  dashed: dashed,
+  dotted: dotted,
+  double: double,
+  groove: groove,
+  ridge: ridge,
+  inset: inset,
+  outset: outset,
+  none: none,
+  hidden: hidden,
+);
+
+@each $value, $border in $borderStyles {
+  .border-#{$value} {
+    border-style: $border;
+  }
+}
+
+// End: Borders Styles

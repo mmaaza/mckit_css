@@ -1,0 +1,96 @@
+$displayValues: (
+    block: block,
+    inline: inline,
+    'inline-block': inline-block,
+    flex: flex,
+    'inline-flex': inline-flex,
+    table: table,
+    'table-row': table-row,
+    'table-cell': table-cell,
+    'table-caption': table-caption,
+    contents: contents,
+    hidden: none,
+    grid: grid,
+    'inline-grid': inline-grid,
+    'table-row-group': table-row-group,
+    'table-header-group': table-header-group,
+    'table-footer-group': table-footer-group,
+    'table-column-group': table-column-group,
+    'table-column': table-column,
+);
+
+@each $value, $display in $displayValues {
+    .d-#{$value} {
+        display: $display;
+    }
+}
+
+$flexValues: (
+    row: row,
+    column: column,
+    'row-reverse': row-reverse,
+    'column-reverse': column-reverse,
+);
+
+@each $value, $flex in $flexValues {
+    .flex-#{$value} {
+        flex-direction: $flex;
+    }
+}
+
+$justifyValues: (
+    start: flex-start,
+    end: flex-end,
+    center: center,
+    between: space-between,
+    around: space-around,
+    evenly: space-evenly,
+);
+
+@each $value, $justify in $justifyValues {
+    .justify-#{$value} {
+        justify-content: $justify;
+    }
+}
+
+$alignItemsValues: (
+    start: flex-start,
+    end: flex-end,
+    center: center,
+    baseline: baseline,
+    stretch: stretch,
+);
+
+@each $value, $align in $alignItemsValues {
+    .items-#{$value} {
+        align-items: $align;
+    }
+}
+
+$justifySelfValues: (
+    start: flex-start,
+    end: flex-end,
+    center: center,
+    baseline: baseline,
+    stretch: stretch,
+);
+
+@each $value, $justifySelf in $justifySelfValues {
+    .justify-self-#{$value} {
+        justify-self: $justifySelf;
+    }
+}
+
+$alignSelfValues: (
+    start: flex-start,
+    end: flex-end,
+    center: center,
+    baseline: baseline,
+    stretch: stretch,
+);
+
+@each $value, $alignSelf in $alignSelfValues {
+    .self-#{$value} {
+        align-self: $alignSelf;
+    }
+}

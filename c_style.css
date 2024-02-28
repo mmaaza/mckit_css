@@ -1,0 +1,129 @@
+:root {
+  /* CSS HEX */
+  --persian-indigo: #421c86ff;
+  --blue-violet: #7034e4ff;
+  --mauve: #bcacf9ff;
+  --magnolia: #f3f1feff;
+}
+
+.persian-indigo {
+  color: var(--persian-indigo);
+}
+
+.blue-violet {
+  color: var(--blue-violet);
+}
+
+.mauve {
+  color: var(--mauve);
+}
+
+.magnolia {
+  color: var(--magnolia);
+}
+
+header {
+  background: #fff;
+}
+
+nav a {
+  color: var(--persian-indigo);
+  border-radius: 5px;
+}
+
+nav a:hover {
+  color: var(--blue-violet);
+  background-color: var(--magnolia);
+}
+
+nav button {
+  color: var(--blue-violet);
+  background: var(--magnolia);
+  border: 2px solid transparent;
+}
+
+nav button:hover {
+  border: 2px solid var(--mauve);
+}
+
+.stars {
+  position: absolute;
+  left: auto;
+  top: auto;
+  right: 6%;
+  bottom: 0;
+  z-index: -998;
+}
+
+#hero_section img {
+  position: absolute;
+  left: auto;
+  top: 0;
+  right: 3%;
+  bottom: auto;
+  border: 0;
+  vertical-align: middle;
+  display: inline-block;
+  max-width: 100%;
+  width: 662px;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+  z-index: -999;
+}
+
+.main_btn {
+  background: var(--blue-violet);
+  color: #fff;
+  height: 56px;
+  padding: 16px 24px;
+  grid-column-gap: 8px;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: 0.1s ease-in;
+}
+
+.main_btn:active {
+  background: var(--persian-indigo);
+}
+
+#mywords_div {
+  background: var(--magnolia);
+  border-radius: 8px;
+  line-height: 1.5;
+  text-align: justify;
+  border: 1px solid var(--blue-violet);
+  position: relative;
+}
+
+#mywords_div div p {
+  font-style: italic;
+}
+
+#mywords_div i {
+  position: absolute;
+  top: -2rem;
+  left: 0;
+}
+
+.os{
+  overflow: hidden;
+}
+
+#opensource-section {
+  position: relative;
+}
+
+#opensource-section img {
+  position: absolute;
+  left: auto;
+  top: -10%;
+  right: -110%;
+  bottom: auto;
+  border: 0;
+  vertical-align: middle;
+  display: inline-block;
+  max-width: 120%;
+  /* width: 800px; */
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
